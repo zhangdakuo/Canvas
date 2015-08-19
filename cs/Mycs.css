@@ -1,0 +1,75 @@
+﻿@charset "utf-8";
+/* CSS Document */
+html,body{ width: 100%; height: 100%; font-family:'Microsoft Yahei', Arial, Helvetica, sans-serif; font-size:62.5%;}
+input,button{ font-family:"Microsoft yahei";}
+
+input::-webkit-cancel-button {display: none;}
+input::-ms-clear {display: none;}
+input[type=text]:focus{ box-shadow: none;}
+
+*{ outline:none; -webkit-tap-highlight-color:rgba(255,0,0,0);}
+img{ display: inline-block; max-width: 100%;}
+
+#wrap{ position: relative; width: 100%; height: 100%; overflow: hidden;}
+
+/*loading*/
+.loading{ position: absolute; top: 0px; width: 100%; height: 100%; background: #48d7e8; z-index: 10; overflow: hidden;}
+.loading .load_rock{ width: 100%; height: 100%;}
+.loading .load_right{ position: absolute; top: 2.155887%; right: 0px; width: 5.066667%;}
+.loading .load_logo{ position: absolute; top: 2%; left: 50%; margin-left: -175px; width: 54.533333%;}
+/*模版选择*/
+.page{overflow: hidden; height: 100%;}
+.page_box{width:300%;height:765px;}
+.page_box div{float:left;}
+.page_icon1{background-image: url(../images/pop_bg1.png);background-size:cover; }
+.page_icon2{background-image: url(../images/pop_bg2.png);background-size:cover; }
+.page_icon3{background-image: url(../images/pop_bg3.png);background-size:cover; }
+/*相框公共样式*/
+.photo{ position: relative; width: 100%; height: 100%;display: none;}
+.photo .photo_even .photo_test{ position: absolute; width: 100%; z-index: 0;}
+.photo .photo_top{ position: relative; width: 100%; height: 100%; z-index: 2;}
+.photo .photo_top a{ display: inline-block;}
+.photo .photo_top .photo_btn3{ position: absolute; bottom: 2.380952%; left: 50%; margin-left: -152px; width: 47.65625%;}
+.photo .photo_top .photo_btn3 input{ position: absolute;width: 100%; height: 100%; /*bottom: 2.199662%; left: 50%; margin-left: -74px;*/ opacity: 0; /*width: 118px; height: 35px;*/}
+
+.upimg_canvas {width: 640px; height: 100%; position: absolute; top: 0px; left: 0px; display: none; z-index: 999; background: #ccc; overflow: hidden;}
+.upimg_can_masktop {position: absolute; width: 640px; height: 50%; top: 0; left: 0; background: rgba(0, 0, 0, 0.6); z-index: 9; margin-top: -320px;}
+.upimg_can_maskbot {position: absolute;width: 640px; height: 50%; top: 50%; left: 0; background: rgba(0, 0, 0, 0.6); z-index: 9; margin-top: 320px;}
+.upimg_canvas_btn_true { position: absolute; bottom: 50px; left: 50%; margin-left: -80px; z-index: 99;/* display: none;*/}
+.imgCanvas { position: absolute; top: 0; left: 0; z-index: 1;/* display: none;*/}
+.hideCanvas {position: absolute; top: 0; left: 100%; z-index: 1;}
+.resCanvas {position: absolute; top: 0; left: -100%; z-index: 1;}
+
+
+/*音乐*/
+.btn-menu{ position: absolute; bottom: 2.380952%; left: 10px; z-index: 200; /*font-size: 40px; color: #575757;*/}
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+  font-family: 'mute';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1em;
+  display: inline-block;
+  width: 1em;
+  margin-right: .2em;
+  margin-left: .2em;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+  speak: none;
+}
+.icon-volume-off:before {
+  content: '\e805';
+  width: 44px;
+  height: 44px;
+  background: url(../images/pause.png) no-repeat;
+}
+.icon-volume-high:before {
+  content: '\e805';
+  width: 77px;
+  height: 77px;
+  background: url(../images/music.png) no-repeat;
+  background-size: cover;
+}
